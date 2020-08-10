@@ -1,0 +1,216 @@
+*{
+    
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+html , body{
+    width: 100%;
+    margin: 0;
+}
+:root{
+    --color-texth3: #19304f;
+    --color-background1: #ffffff;
+    --color-background2: #19304f;
+    --color-paragraf: #222222;
+    --color-text2: #ffffff;
+    --font-sizeh2: 30px;
+    --font-sizeh3: 20px;
+    --font-size-p: 18px;
+}
+.main{
+    padding: 0px 40px 0px 40px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+.header{
+    display: flex;
+}
+/* tamanho dos container*/
+.main_content1{
+    width: 773px;   
+    display: flex;
+    background-color: var(--color-background1);
+    justify-content: center;
+}
+.main_tutor_content2{
+    width:323px;
+    background-color: var(--color-background2);
+    display: flex;
+    justify-content: center;
+}
+
+/* Container 1*/
+.big-box1{
+    width: 647px;
+    max-width: 100%;
+    height: 902px;
+    margin: 61px 51px 61px 65px;
+    
+}
+.main_content_img img{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: black 2px solid;
+    margin:38px 0px 0px 29px;
+}
+
+.main_content_name h2{
+    font-size: var(--font-sizeh2);
+    margin: 51px 117px 0px 11px;
+    color:var(--color-texth3);
+    
+}
+.main_content_name  h4 {
+    font-size: 18px;
+    margin: 7px 138px 0px 17px;
+}
+.text-paragraf{
+    color: var(--color-paragraf);
+    padding: 0px;
+    margin: 0px;
+    width: 524px;
+    line-height: 30px;
+    font-size: var(--font-size-p)
+}
+.main_content_p{
+    text-align: justify;
+    margin: 0px 24px 55px 30px;
+}
+.title-section{
+    color: var(--color-texth3);
+    margin-bottom: 11px;
+    font-size:var(--font-sizeh3);
+}
+.space-a{
+    margin-left: 10px;
+}
+/* Container 1*/
+
+/* Container 2*/
+
+.big-box2{
+    width: 200px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 160px 0px 0px 0px;
+}
+.title-article{
+    color:var(--color-background1);
+    font-size: var(--font-sizeh3);
+    margin-bottom: 11px;
+}
+.text-paragraf2{
+    color:var(--color-background1);
+    font-size: var(--font-size-p);
+    margin-bottom: 22px;
+    list-style-type: none;
+    padding:0px;
+    line-height: 25px;
+}
+.text-paragraf2 li{
+    border-bottom: 2px solid var(--color-background1);
+    margin-top: 9px;
+}
+.icones a{
+    color: var(--color-background1); 
+    font-size: 25px;
+    left:0px;
+    padding: 2px;
+}
+.list-icones{
+    padding:0;
+    margin:0;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 55px;
+}
+
+/* Container 2*/
+
+/* Parte responsiva para 425px*/
+@media (max-width:425px) {
+
+    body{
+        margin: 0;
+    }
+    .main{
+        width: 100%;
+        flex-direction: column;
+        height:100%;
+        position: relative;
+        padding: 0;
+    }
+    .main_content1{
+        width:100%;
+        height: 70%;
+
+    }
+    .main_tutor_content2{
+        flex-direction: row;
+        width: 100%;
+        height: 30%;
+        bottom:0;
+        font: 12px;
+        margin: 0;
+    }
+    .big-box1{
+        width: 400px;
+        height:100%;
+        margin: 10px 0px 0px 0px ;
+    }
+    .big-box2{
+        flex-direction: row-reverse;
+        width:100%;
+        height: 250px;
+        margin: 0;
+    }
+    .inf2{
+        width: 240px;
+        height: 250px;
+        padding: 5px;
+        margin: 0px 0px 0px 20px;
+        font-size: 12px;
+    }
+    .nav-content2{
+        width:200px;
+    }
+    .main_content_img img{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: black 2px solid;
+    }
+    .main_content_name{
+        width: 200px;
+    }
+    .main_content_name h2{
+        color:var(--color-texth3);
+        font-size:20px;
+        margin: 51px 0px 0px 11px;
+        width: 200px;
+    }
+    .main_content_name  h4 {
+        font-size: 15px;
+        width:180px;
+    }
+    .text-paragraf{
+        color: var(--color-paragraf);
+        padding: 0px;
+        margin: 0px;
+        width: 342px;
+        line-height: 30px;
+        font-size: 12px;
+    }
+    .main_content_p ul{
+        padding:7px;
+    }
+    .text-paragraf2{
+        padding: 2px;
+        font-size: 12px;
+    }
+    
+}
